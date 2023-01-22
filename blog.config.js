@@ -1,37 +1,37 @@
 // 注: process.env.XX是Vercel的环境变量，配置方式见：https://docs.tangly1024.com/zh/features/personality
 const BLOG = {
-  AUTHOR: 'Pudy', // 作者
-  BIO: '一位網站前端開發者、網頁設計師', // 作者简介
-  LINK: 'https://copudy.github.io', // 网站地址
-  KEYWORDS: 'Notion, Web Designer', // 网站关键词 英文逗号隔开
+  AUTHOR: '公子向北走', // 作者
+  BIO: '一位用程序幹飯的開發員、網頁設計師', // 作者簡介
+  LINK: 'https://copudy.github.io', // 網站地址
+  KEYWORDS: 'Notion, Web Designer', // 網站關鍵詞 英文逗號隔開
   NOTION_PAGE_ID:724ab37a74b44609add75d9328570ec3
   process.env.NOTION_PAGE_ID || '02ab3b8678004aa69e9e415905ef32a5', // Important page_id！！！Duplicate Template from  https://www.notion.so/tanghh/02ab3b8678004aa69e9e415905ef32a5
   NOTION_ACCESS_TOKEN: process.env.NOTION_ACCESS_TOKEN || '', // Useful if you prefer not to make your database public
-  DEBUG: process.env.NEXT_PUBLIC_DEBUG || false, // 是否显示调试按钮
+  DEBUG: process.env.NEXT_PUBLIC_DEBUG || false, // 是否顯示調適按鈕
 
-  // 一个小插件展示你的facebook fan page~ @see https://tw.andys.pro/article/add-facebook-fanpage-notionnext
+  // 一個小插件展示你的 facebook fan page~ @see https://tw.andys.pro/article/add-facebook-fanpage-notionnext
   FACEBOOK_PAGE_TITLE:
-    process.env.NEXT_PUBLIC_FACEBOOK_PAGE_TITLE || null, // 邊欄 Facebook Page widget 的標題欄，填''則無標題欄 e.g FACEBOOK 粉絲團'
+    process.env.NEXT_PUBLIC_FACEBOOK_PAGE_TITLE || null, // 邊欄 Facebook Page widget 的標題欄，填''則無標題欄 e.g FACEBOOK 粉絲團
   FACEBOOK_PAGE:
     process.env.NEXT_PUBLIC_FACEBOOK_PAGE || null, // Facebook Page 的連結 e.g https://www.facebook.com/tw.andys.pro
   FACEBOOK_PAGE_ID: process.env.NEXT_PUBLIC_FACEBOOK_PAGE_ID || '', // Facebook Page ID 來啟用 messenger 聊天功能
-  FACEBOOK_APP_ID: process.env.NEXT_PUBLIC_FACEBOOK_APP_ID || '', // Facebook App ID 來啟用 messenger 聊天功能 获取: https://developers.facebook.com/
+  FACEBOOK_APP_ID: process.env.NEXT_PUBLIC_FACEBOOK_APP_ID || '', // Facebook App ID 來啟用 messenger 聊天功能 獲取: https://developers.facebook.com/
 
-  THEME: process.env.FUKASAWA_PUBLIC_THEME || 'fukasawa', // 主题， 支持 ['next','hexo',"fukasawa','medium','example'] @see https://preview.tangly1024.com
-  THEME_SWITCH: process.env.FUKASAWA_PUBLIC_THEME_SWITCH || false, // 是否显示切换主题按钮
+  THEME: process.env.FUKASAWA_PUBLIC_THEME || 'next', // 主題， 支持 ['next','hexo',"fukasawa','medium','example'] @see https://preview.tangly1024.com
+  THEME_SWITCH: process.env.FUKASAWA_PUBLIC_THEME_SWITCH || false, // 是否顯示切换主題按鈕
   LANG: 'zh-TW', // e.g 'zh-CN','en-US'  see /lib/lang.js for more.
-  HOME_BANNER_IMAGE: './bg_image.jpg', // 首页背景大图，默认文件：/public/bg_image.jpg 。会被Notion中的封面图覆盖。
+  HOME_BANNER_IMAGE: './bg_image.jpg', // 首頁背景大圖，默認文件：/public/bg_image.jpg 。會被 Notion 中的封面圖覆蓋。
   SINCE: 2022, // e.g if leave this empty, current year will be used.
-  BEI_AN: process.env.NEXT_PUBLIC_BEI_AN || '', // 备案号 闽ICP备XXXXXXX
-  APPEARANCE: 'light', // ['light', 'dark', 'auto'], // light 日间模式 ， dark夜间模式， auto根据时间和主题自动夜间模式
+  BEI_AN: process.env.NEXT_PUBLIC_BEI_AN || '', // 備案號 闽 ICP 备 XXXXXXX
+  APPEARANCE: 'light', // ['light', 'dark', 'auto'], // light 日間模式 ， dark 夜間模式， auto 根據時間和主題自動夜間模式
 
-  // 自定义字体示例： 请先将 CUSTOM_FONT 改为 true， 并将 CUSTOM_FONT_URL 改为你的字体CSS地址，同时在 CUSTOM_FONT_SANS 与 CUSTOM_FONT_SERIF 中指定你的 fontfamily
-  CUSTOM_FONT: true, // 是否使用自定义字体
-  CUSTOM_FONT_URL: ['https://npm.elemecdn.com/lxgw-wenkai-webfont@1.6.0/style.css'], // 自定义字体的CSS
-  CUSTOM_FONT_SANS: ['LXGW WenKai'], // 自定义无衬线字体
-  CUSTOM_FONT_SERIF: ['LXGW WenKai'], // 自定义衬线字体
+  // 自定义字体示例： 请先将 CUSTOM_FONT 改为 true， 並將 CUSTOM_FONT_URL 改為你的字體 CSS 地址，同時在 CUSTOM_FONT_SANS 與 CUSTOM_FONT_SERIF 中指定你的 fontfamily
+  CUSTOM_FONT: true, // 是否使用自定義字體
+  CUSTOM_FONT_URL: ['https://npm.elemecdn.com/lxgw-wenkai-webfont@1.6.0/style.css'], // 自定義字體的 CSS
+  CUSTOM_FONT_SANS: ['LXGW WenKai'], // 自定義無襯線字體
+  CUSTOM_FONT_SERIF: ['LXGW WenKai'], // 自定義襯線字體
 
-  // 图标库CDN(可以直接改版本号）
+  // 圖標庫 CDN (可以直接改版本號）
   FONT_AWESOME_PATH: 'https://cdn.bootcdn.net/ajax/libs/font-awesome/6.2.0/css/all.min.css',
 
   BACKGROUND_LIGHT: '#eeeeee', // use hex value, don't forget '#' e.g #fffefc
@@ -140,7 +140,7 @@ const BLOG = {
 
   ADSENSE_GOOGLE_ID: process.env.NEXT_PUBLIC_ADSENSE_GOOGLE_ID || '', // 谷歌广告ID e.g ca-pub-xxxxxxxxxxxxxxxx
 
-  // 自定义配置notion数据库字段名
+  // 自定義配置 notion 數據庫字段名
   NOTION_PROPERTY_NAME: {
     password: process.env.NEXT_PUBLIC_NOTION_PROPERTY_PASSWORD || 'password',
     type: process.env.NEXT_PUBLIC_NOTION_PROPERTY_TYPE || 'type',
@@ -154,15 +154,15 @@ const BLOG = {
     icon: process.env.NEXT_PUBLIC_NOTION_PROPERTY_ICON || 'icon'
   },
 
-  ENABLE_CACHE: process.env.ENABLE_CACHE || false, // 开启缓存 会将Notion数据缓存在内存中，稍微提升访问速度，但要更新内容需要多次刷新页面
+  ENABLE_CACHE: process.env.ENABLE_CACHE || false, // 開啟緩存，會將 Notion 數據庫存在内存中，稍微提升訪問速度，但要更新内容需要多次刷新頁面
 
-  AVATAR: '/20566.jpg', // 作者头像，被notion中的ICON覆盖。如果没有ICON则取public目录下的avatar.png
-  TITLE: process.env.NEXT_PUBLIC_TITLE || 'NotionNext BLOG', // 站点标题 ，被notion中的页面标题覆盖
+  AVATAR: '/20566.jpg', // 作者頭像，被 notion 中的 ICON 覆蓋。如果没有 ICON 則取 public 目錄下的 avatar.png
+  TITLE: process.env.NEXT_PUBLIC_TITLE || 'NotionNext BLOG', // 站點標題，被 notion 中的頁面標題覆蓋
   DESCRIPTION:
-    process.env.NEXT_PUBLIC_DESCRIPTION || '这是一个由NotionNext生成的站点', // 站点描述，被notion中的页面描述覆盖
+    process.env.NEXT_PUBLIC_DESCRIPTION || '這是一個由 NotionNext 生成的站點', // 站點描述，被 notion 中的頁面描述覆蓋
 
   isProd: process.env.VERCEL_ENV === 'production', // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)  isProd: process.env.VERCEL_ENV === 'production' // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
-  VERSION: process.env.NEXT_PUBLIC_VERSION // 版本号
+  VERSION: process.env.NEXT_PUBLIC_VERSION // 版本號
 }
 
 module.exports = BLOG
